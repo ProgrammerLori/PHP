@@ -1,14 +1,7 @@
 <?php
 
-function tanulokListaja($conn) {
-	$sql = "SELECT id, nev, sor, oszlop FROM ulesrend";
-	$result = $conn->query($sql);
-	return $result;
-}
-
-
 function getIds($tablanev, $conn) {
-    $tomb = array(); // ebben lesznek azk id-k felsorolva
+    $tomb = array(); // ebben leszek azk id-k felsorolva
 
     $sql = "SELECT id FROM $tablanev";
     $result = $conn->query($sql);

@@ -2,10 +2,10 @@
 
 require_once 'Kijeloltfelhasznalok.php';
 
-class Admin extends Kijeloltfelhasznalok {
+class Hianyzo extends Kijeloltfelhasznalok {
     
     function __construct() {
-        $this->tablaNev = 'adminok';
+        $this->tablaNev = 'hianyzok';
     }
 }
 
