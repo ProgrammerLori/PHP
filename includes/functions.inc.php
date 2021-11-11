@@ -8,7 +8,7 @@ function tanulokListaja($conn) {
 
 
 function getIds($tablanev, $conn) {
-    $tomb = array(); // ebben leszek azk id-k felsorolva
+    $tomb = array(); // ebben lesznek azk id-k felsorolva
 
     $sql = "SELECT id FROM $tablanev";
     $result = $conn->query($sql);
