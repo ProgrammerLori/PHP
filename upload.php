@@ -1,7 +1,7 @@
 <?php
 $i= 0;
 $errors=array();
-    if (isset($_FILES["fileToUpload"]) ) {/*
+    if (isset($_FILES["fileToUpload"]) ) {
         echo '<pre>';
         print_r($_FILES["fileToUpload"]);
         echo '<pre>';
@@ -29,9 +29,9 @@ $errors=array();
         }
         }
         
-    }*/
+    }
     
-}
+
 
 ?>
 <!DOCTYPE html>
