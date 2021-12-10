@@ -16,6 +16,11 @@ while(! feof($myfile)) {
 fclose($myfile);
 rename("newfile.txt","oldfile.txt");
 echo copy("oldfile.txt","copyfile.txt");
+$myfile = fopen("copyfile.txt", "r") or die("Unable to open file!");
+while(! feof($myfile)) {
+    $line = fgets($myfile);
+    echo $line. "<br>";
+  }
 echo unlink("oldfile.txt");
 
 
